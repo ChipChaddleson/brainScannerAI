@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #2E3440; /* Polar Night 1 */
+            color: #ECEFF4; /* Snow Storm 1 */
+        }
+
+        .container {
+            padding: 50px 10%;
+        }
+
+        .box {
+            position: relative;
+            background: #2E3440; /* Polar Night 1 */
+            color: #ECEFF4; /* Snow Storm 1 */
+        }
+
+        .boxHeader {
+            color: #D8DEE9; /* Snow Storm 4 */
+            display: block;
+            padding: 10px;
+            position: relative;
+            border-bottom: 1px solid #3B4252; /* Polar Night 2 */
+            margin-bottom: 10px;
+        }
+
+        .boxTools {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+
+        .previewZone {
+            text-align: center;
+        }
+
+        .previewZone .box {
+            box-shadow: none;
+            border-radius: 0;
+            margin-bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="previewZone">
+                            <div class="box box-solid">
+                                <div class="boxHeader withBorder">
+                                    <div><b>Preview</b></div>
+                                </div>
+                                <div class="box-body">
+                                    <img src="data:image/png;base64,{{ imageData }}" width="width: -webkit-fill-available;" />
+                                    <p style="font-size: 2em;">{{ label }} - {{ certainty }}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div style="float: right;width: fit-content;border-radius: 15%;background: #88C0D0;"><a href="http://127.0.0.1:80" style="
+                        padding: 10px;
+                        font-weight: bold;
+                    ">new
+                    </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
